@@ -13,9 +13,9 @@ const Home = () => {
 							block
 							className="rounded shadow-sm py-2"
 							style={{
-								background: "#fffbc3",
+								background: "#F97cc3",
 								border: 0,
-								color: "grey",
+								color: "white",
 							}}
 						>
 							Todo
@@ -43,9 +43,9 @@ const Home = () => {
 							block
 							className="rounded shadow-sm py-2"
 							style={{
-								background: "#fffbc3",
+								background: "#F97cc3",
 								border: 0,
-								color: "grey",
+								color: "white",
 							}}
 						>
 							Not Done

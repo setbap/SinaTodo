@@ -9,10 +9,14 @@ html {
 }
 a {
 	text-decoration: none !important;
-	color: gray !important;
+	color: white !important;
 }
 .bg-yellow {
-	background: #fffbc3;
+	/* background: #fffbc3; */
+	background: #f97cc3;
+}
+.text-white {
+	color: white;
 }
 
 .pg-container {
@@ -31,7 +35,7 @@ a {
 	margin: 20px;
 	/* margin-right: 20px;
 	margin-bottom: 16px; */
-	background: #fffbc3;
+	background: #f97cc3;
 	width: 60px;
 	height: 60px;
 }
