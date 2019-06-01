@@ -1,5 +1,5 @@
 import React from "react";
-import DoneItem from "./DoneItem";
+import NoteItem from "./NoteItem";
 import Fab from "../../layouts/Fab";
 import { Link } from "react-router-dom";
 import { Col, Row, Button, Container } from "reactstrap";
@@ -13,7 +13,7 @@ const Done = () => {
 							block
 							className="rounded shadow-sm py-2"
 							style={{
-								background: "#fffbc3",
+								background: "#E1E0E0",
 								border: 0,
 								color: "grey",
 							}}
@@ -28,7 +28,7 @@ const Done = () => {
 							block
 							className="rounded shadow-sm py-2"
 							style={{
-								background: "#E1E0E0",
+								background: "#fffbc3",
 								border: 0,
 								color: "grey",
 							}}
@@ -37,40 +37,14 @@ const Done = () => {
 						</Button>
 					</Link>
 				</Col>
-				<Col xs="6" className="mt-2">
-					<Link to="/">
-						<Button
-							block
-							className="rounded shadow-sm py-2"
-							style={{
-								background: "#E1E0E0",
-								border: 0,
-								color: "grey",
-							}}
-						>
-							Not Done
-						</Button>
-					</Link>
-				</Col>
-				<Col xs="6" className="mt-2">
-					<Link to="/done">
-						<Button
-							block
-							className="rounded shadow-sm py-2"
-							style={{
-								background: "#fffbc3",
-
-								border: 0,
-								color: "grey",
-							}}
-						>
-							Done
-						</Button>
-					</Link>
-				</Col>
 			</Row>
-			<Fab />
-			<DoneItem />
+			<Button
+				className="tp fab rounded-circle bg-yellow shadow-sm"
+				style={{ background: "#fffbc3", border: 0, color: "grey" }}
+			>
+				<Link to="/addNote">NEW</Link>
+			</Button>
+			<NoteItem />
 		</Container>
 	);
 };

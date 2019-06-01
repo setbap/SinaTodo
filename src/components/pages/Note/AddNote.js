@@ -11,19 +11,12 @@ import {
 	Button,
 	Row,
 } from "reactstrap";
+
 import { Link } from "react-router-dom";
 
 const AddTodo = (props) => {
 	const context = useContext(Context);
-	const [title, setTitle] = useState("");
-	const [desc, setDesc] = useState("");
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		context.addTodo({ title, desc });
-		setDesc("");
-		setTitle("");
-		props.history.push(`/`);
-	};
+	const [note, setNote] = useState("");
 
 	return (
 		<Container>
@@ -35,7 +28,7 @@ const AddTodo = (props) => {
 							block
 							className="rounded shadow-sm py-2"
 							style={{
-								background: "#fffbc3",
+								background: "#E1E0E0",
 								border: 0,
 								color: "grey",
 							}}
@@ -50,7 +43,7 @@ const AddTodo = (props) => {
 							block
 							className="rounded shadow-sm py-2"
 							style={{
-								background: "#E1E0E0",
+								background: "#fffbc3",
 								border: 0,
 								color: "grey",
 							}}
@@ -60,41 +53,32 @@ const AddTodo = (props) => {
 					</Link>
 				</Col>
 			</Row>
-			<Form onSubmit={handleSubmit}>
+			<Form>
 				<FormGroup className="my-3" row>
-					<Label for="tid" xs={2}>
-						Title
+					<Label for="nid" xs={2}>
+						note
 					</Label>
 					<Col xx={10}>
 						<Input
-							type="text"
-							name="title"
-							id="tid"
-							value={title}
-							onChange={(e) => setTitle(e.target.value)}
-							placeholder="enter your work title"
-						/>
-					</Col>
-				</FormGroup>
-				<FormGroup className="my-3" row>
-					<Label for="did" xs={2}>
-						Desc
-					</Label>
-					<Col xs={10}>
-						<Input
 							type="textarea"
-							name="desc"
-							id="did"
-							value={desc}
-							onChange={(e) => setDesc(e.target.value)}
-							row="20"
-							placeholder="enter your work desc"
+							name="note"
+							id="nid"
+							value={note}
+							onChange={(e) => setNote(e.target.value)}
+							placeholder="keep your note"
 						/>
 					</Col>
 				</FormGroup>
+
 				<Button
 					className="tp fab rounded-circle bg-yellow shadow-sm"
 					style={{ background: "#fffbc3", border: 0, color: "grey" }}
+					onClick={(e) => {
+						e.preventDefault();
+						context.addNote({ note });
+						setNote("");
+						props.history.push(`/note`);
+					}}
 				>
 					save
 				</Button>

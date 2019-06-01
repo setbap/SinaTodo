@@ -7,7 +7,7 @@ const Fab = () => {
 			className="tp fab rounded-circle bg-yellow shadow-sm"
 			style={{ background: "#fffbc3", border: 0, color: "grey" }}
 		>
-			<Link to="/addTodo">x</Link>
+			<Link to="/addTodo">NEW</Link>
 		</Button>
 	);
 };

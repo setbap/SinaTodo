@@ -1,5 +1,5 @@
 import React from "react";
-import TodoItem from "../../layouts/TodoItem";
+import TodoItem from "./TodoItem";
 import Fab from "../../layouts/Fab";
 import { Link } from "react-router-dom";
 import { Col, Row, Button, Container } from "reactstrap";
