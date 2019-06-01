@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Context from "../../../context/Context";
-import { Button } from "reactstrap";
 const TodoItem = () => {
 	const context = useContext(Context);
 

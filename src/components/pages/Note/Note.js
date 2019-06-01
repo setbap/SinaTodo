@@ -1,6 +1,5 @@
 import React from "react";
 import NoteItem from "./NoteItem";
-import Fab from "../../layouts/Fab";
 import { Link } from "react-router-dom";
 import { Col, Row, Button, Container } from "reactstrap";
 const Done = () => {
