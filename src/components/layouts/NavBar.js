@@ -15,8 +15,12 @@ const NavBar = (props) => {
 	return (
 		<div>
 			<Navbar className="bg-yellow " color="faded" light>
-				<NavbarBrand tag={Link} to="/" className="mr-auto">
-					Sina Todo
+				<NavbarBrand
+					tag={Link}
+					to="/"
+					className=" font-weight-bold mr-auto"
+				>
+					My Todo
 				</NavbarBrand>
 				<NavbarToggler
 					onClick={() => setToggle(!toggle)}
@@ -25,13 +29,22 @@ const NavBar = (props) => {
 				<Collapse isOpen={!toggle} navbar>
 					<Nav navbar>
 						<NavItem>
-							<NavLink tag={Link} to="/about">
+							<NavLink
+								className="text-center"
+								onClick={() => setToggle(!toggle)}
+								tag={Link}
+								to="/about"
+							>
 								ABOUT
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="https://github.com/reactstrap/reactstrap">
-								GitHub
+							<NavLink
+								className="text-center"
+								onClick={() => setToggle(!toggle)}
+								href="https://github.com/setbap/Sinatodo"
+							>
+								Source Code (github)
 							</NavLink>
 						</NavItem>
 					</Nav>

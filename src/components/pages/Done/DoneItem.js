@@ -25,18 +25,12 @@ const TodoItem = () => {
 
 	const noItemFound = (
 		<div className="jumbotron my-4">
-			<h1 className="display-4">Hello, world!</h1>
-			<p className="lead">to add item press fab button</p>
-			<hr className="my-4" />
-
+			<h1 className="display-4">Hi my friend</h1>
 			<p className="lead">
-				<a
-					className="btn btn-primary btn-lg"
-					href="github.com"
-					role="button"
-				>
-					good luck
-				</a>
+				You do not have any work done. <br />
+				lets start new work
+				<br />
+				have fun{" "}
 			</p>
 		</div>
 	);

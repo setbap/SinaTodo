@@ -24,18 +24,12 @@ const NoteItem = () => {
 
 	const noItemFound = (
 		<div className="jumbotron my-4">
-			<h1 className="display-4">Hello, world!</h1>
-			<p className="lead">to add item press fab button</p>
-			<hr className="my-4" />
-
+			<h1 className="display-4">Hi my friend</h1>
 			<p className="lead">
-				<a
-					className="btn btn-primary btn-lg"
-					href="github.com"
-					role="button"
-				>
-					good luck
-				</a>
+				You do not have any note. :( <br />
+				trust me say what you want. i save it in localStorage
+				<br />
+				have fun{" "}
 			</p>
 		</div>
 	);
