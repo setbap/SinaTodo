@@ -23,7 +23,7 @@ const About = () => {
 				<p className="text-center text-white font-bold pt-2">Kiana</p>
 
 				<p className="  text-white px-3  text-right ">
-			این بروژه توسط کیانا کیایی برای درس طراحی مدار واسط ایجاد شده است
+			این پروژه توسط کیانا کیایی برای درس طراحی مدار واسط ایجاد شده است
 				</p>
 				<p className="  text-white px-3  text-right ">
 					
@@ -35,7 +35,10 @@ const About = () => {
 						</p>
 						<p className="px-3 text-bold     text-white text-right ">
 					
-					 همچنین ذخبره لیست در حافظه داخلی  که باعث میشود در صورت خروج از برنامه لیست در حافظه ماندگار شود
+					 همچنین ذخیره لیست در حافظه داخلی  که باعث میشود در صورت خروج از برنامه لیست در حافظه ماندگار شود
+						</p>
+						<p className="px-3 text-bold     text-white text-right ">
+و قابلیت نصب به صورت اپ پیشرو  در اندروید و  ای او اس				
 						</p>
 				<p className="text-center pb-3  text-white">
 					made by <span className="text-danger d-inline">Kiana </span> with 
