@@ -38,15 +38,6 @@ const NavBar = (props) => {
 								ABOUT
 							</NavLink>
 						</NavItem>
-						<NavItem>
-							<NavLink
-								className="text-center"
-								onClick={() => setToggle(!toggle)}
-								href="https://github.com/setbap/Sinatodo"
-							>
-								Source Code (github)
-							</NavLink>
-						</NavItem>
 					</Nav>
 				</Collapse>
 			</Navbar>

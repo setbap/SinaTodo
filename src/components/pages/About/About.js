@@ -6,11 +6,11 @@ const About = () => {
 			<div
 				className="rounded-circle mx-auto my-3 shadow-lg border  text-white  text-center display-4 bg-yellow "
 				style={{
-					width: "75px",
-					height: "75px",
+					width: "100px",
+					height: "100px",
 				}}
 			>
-				SE
+				KK
 			</div>
 			<div
 				className="rounded shadow-sm  mx-auto text-center  bg-yellow "
@@ -20,24 +20,29 @@ const About = () => {
 				}}
 			>
 				<br />
-				<p className="text-center text-white pt-2">@setbap</p>
+				<p className="text-center text-white font-bold pt-2">Kiana</p>
 
-				<p className="  text-white px-3  text-justify ">
-					this page was created by sina ebrahimi by react and
-					reactstrap. using react 16.8 and react hook. Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Alias incidunt,
-					quibusdam consequatur natus perferendis saepe rerum eligendi
-					est voluptatibus ea, neque debitis iste. Atque, soluta ad
-					earum molestiae explicabo ratione adipisci consequatur
-					tempore quos, illo minus, tenetur optio architecto corrupti
-					fugiat doloribus.
+				<p className="  text-white px-3  text-right ">
+			این بروژه توسط کیانا کیایی برای درس طراحی مدار واسط ایجاد شده است
 				</p>
+				<p className="  text-white px-3  text-right ">
+					
+			ویژگی های این برنامه:
+				</p>
+				<p className="  px-3   text-white   text-right ">
+					
+					 استفاده از اخرین نسخه ری اکت و ری اکت هوک و ری اکت کنتکست.
+						</p>
+						<p className="px-3 text-bold     text-white text-right ">
+					
+					 همچنین ذخبره لیست در حافظه داخلی  که باعث میشود در صورت خروج از برنامه لیست در حافظه ماندگار شود
+						</p>
 				<p className="text-center pb-3  text-white">
-					made with{" "}
+					made by <span className="text-danger d-inline">Kiana </span> with 
 					<span className="text-danger  shadow-lg text-white d-inline">
-						{"<"}3{" "}
+					{" "}hard-working
 					</span>{" "}
-					for <span className="text-danger d-inline">you</span>
+					
 				</p>
 			</div>
 		</div>
